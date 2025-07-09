@@ -94,7 +94,7 @@ body {
     font-family: 'Orbitron', monospace;
     font-weight: 700;
     font-size: 1.2rem;
-    background: linear-gradient(45deg, #64ffda, #ff6b9d);
+    background: linear-gradient(45deg, #ddff64, #fa2e0a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -235,7 +235,7 @@ body {
 
 .cta-button {
     position: relative;
-    background: linear-gradient(45deg, #64ffda, #ff6b9d);
+    background: linear-gradient(45deg, #2473eb, #ff6b9d);
     border: none;
     padding: 1rem 2rem;
     font-size: 1.1rem;
@@ -321,7 +321,7 @@ body {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 1rem;
-    background: linear-gradient(45deg, #64ffda, #ff6b9d);
+    background: linear-gradient(45deg, #e396fa, #ff3075);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -462,7 +462,7 @@ body {
 }
 
 .access-btn {
-    background: linear-gradient(45deg, #64ffda, #ff6b9d);
+    background: linear-gradient(45deg, #f86429, #d3ff6b);
     border: none;
     color: #000000;
     padding: 0.5rem 1rem;
