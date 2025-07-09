@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Box - Mechaverse Pirates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+    
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <img src="images/logomechaversepirates.png" alt="Mechaverse Pirates" class="logo">
+                <span class="brand-text">Mechaverse Pirates</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#workshops" class="nav-link">Treasure Box</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="glitch" data-text="TREASURE BOX">TREASURE BOX</span>
+                </h1>
+                <p class="hero-subtitle">Galactic Pirates Surfing the Cold Space</p>
+                <p class="hero-description">
+                    We are the Mechaverse Pirates - explorers of knowledge, creators of innovation, 
+                    and champions of freedom. Join us as we navigate the vast cosmos of learning 
+                    through workshops in literature, arts, coding, and engineering.
+                </p>
+                <button class="cta-button" onclick="scrollToSection('workshops')">
+                    <span>Explore Workshops</span>
+                    <div class="button-glow"></div>
+                </button>
+            </div>
+            <div class="hero-visual">
+                <div class="planet"></div>
+                <div class="ship">🚀</div>
+            </div>
+        </section>
+
+        <section id="workshops" class="workshops">
+            <div class="container">
+                <h2 class="section-title">Workshop Categories</h2>
+                <p class="section-subtitle">Choose your adventure in the galaxy of knowledge</p>
+                
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">All Treasures</button>
+                    <button class="filter-btn" data-category="literature">📚 Literature</button>
+                    <button class="filter-btn" data-category="arts">🎨 Arts</button>
+                    <button class="filter-btn" data-category="coding">💻 Coding</button>
+                    <button class="filter-btn" data-category="engineering">⚙️ Engineering</button>
+                </div>
+
+                <div class="workshops-grid" id="workshopsGrid">
+                    <!-- Literature Workshops -->
+                    <div class="workshop-card" data-category="literature" data-status="completed">
+                        <div class="card-header">
+                            <span class="category-badge literature">📚 Literature</span>
+                            <span class="status-badge completed">soon</span>
+                        </div>
+                        <h3></h3>
+                        <p>The crew’s working on something special! Workshops for this category are coming soon — stay tuned, space pirate!</p>
+                        <div class="card-footer">
+                            <span class="date"></span>
+                            <button class="access-btn">work in progress</button>
+                        </div>
+                    </div>
+
+                    <div class="workshop-card" data-category="literature" data-status="upcoming">
+                        <div class="card-header">
+                            <span class="category-badge literature">📚 Literature</span>
+                            <span class="status-badge upcoming">Upcoming</span>
+                        </div>
+                        <h3>Poetry in the Stars</h3>
+                        <p>Explore the rhythm and beauty of poetry while floating through the endless expanse of space.</p>
+                        <div class="card-footer">
+                            <span class="date">April 20, 2024</span>
+                            <button class="access-btn">Register</button>
+                        </div>
+                    </div>
+
+                    <!-- Arts Workshops -->
+                    <div class="workshop-card" data-category="arts" data-status="completed">
+                        <div class="card-header">
+                            <span class="category-badge arts">🎨 Arts</span>
+                            <span class="status-badge completed">Completed</span>
+                        </div>
+                        <h3>Digital Art Nebula</h3>
+                        <p>Create stunning digital artwork inspired by the mysteries and beauty of deep space.</p>
+                        <div class="card-footer">
+                            <span class="date">February 28, 2024</span>
+                            <button class="access-btn">View Gallery</button>
+                        </div>
+                    </div>
+
+                    <div class="workshop-card" data-category="arts" data-status="ongoing">
+                        <div class="card-header">
+                            <span class="category-badge arts">🎨 Arts</span>
+                            <span class="status-badge ongoing">Ongoing</span>
+                        </div>
+                        <h3>3D Modeling Galaxy</h3>
+                        <p>Learn to create 3D models of spaceships, planets, and futuristic structures.</p>
+                        <div class="card-footer">
+                            <span class="date">March 1 - April 30</span>
+                            <button class="access-btn">Join Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Coding Workshops -->
+                    <div class="workshop-card" data-category="coding" data-status="completed">
+                        <div class="card-header">
+                            <span class="category-badge coding">💻 Coding</span>
+                            <span class="status-badge completed">Completed</span>
+                        </div>
+                        <h3>Web Development Voyage</h3>
+                        <p>Build responsive websites and web applications that work across all devices in the galaxy.</p>
+                        <div class="card-footer">
+                            <span class="date">January 15, 2024</span>
+                            <button class="access-btn">View Code</button>
+                        </div>
+                    </div>
+
+                    <div class="workshop-card" data-category="coding" data-status="upcoming">
+                        <div class="card-header">
+                            <span class="category-badge coding">💻 Coding</span>
+                            <span class="status-badge upcoming">Upcoming</span>
+                        </div>
+                        <h3>AI & Machine Learning Quest</h3>
+                        <p>Dive into artificial intelligence and create smart systems that can navigate the cosmos.</p>
+                        <div class="card-footer">
+                            <span class="date">May 10, 2024</span>
+                            <button class="access-btn">Pre-register</button>
+                        </div>
+                    </div>
+
+                    <div class="workshop-card" data-category="coding" data-status="ongoing">
+                        <div class="card-header">
+                            <span class="category-badge coding">💻 Coding</span>
+                            <span class="status-badge ongoing">Ongoing</span>
+                        </div>
+                        <h3>Game Development Universe</h3>
+                        <p>Create immersive games set in space with engaging mechanics and stunning visuals.</p>
+                        <div class="card-footer">
+                            <span class="date">March 10 - May 15</span>
+                            <button class="access-btn">Join Session</button>
+                        </div>
+                    </div>
+
+                    <!-- Engineering Workshops -->
+                    <div class="workshop-card" data-category="engineering" data-status="completed">
+                        <div class="card-header">
+                            <span class="category-badge engineering">⚙️ Engineering</span>
+                            <span class="status-badge completed">Completed</span>
+                        </div>
+                        <h3>Robotics Expedition</h3>
+                        <p>Build and program robots capable of exploring alien terrains and completing complex missions.</p>
+                        <div class="card-footer">
+                            <span class="date">February 5, 2024</span>
+                            <button class="access-btn">View Builds</button>
+                        </div>
+                    </div>
+
+                    <div class="workshop-card" data-category="engineering" data-status="upcoming">
+                        <div class="card-header">
+                            <span class="category-badge engineering">⚙️ Engineering</span>
+                            <span class="status-badge upcoming">Upcoming</span>
+                        </div>
+                        <h3>Space Station Design</h3>
+                        <p>Engineer sustainable space habitats using cutting-edge technology and innovative design principles.</p>
+                        <div class="card-footer">
+                            <span class="date">June 1, 2024</span>
+                            <button class="access-btn">Reserve Spot</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About Mechaverse Pirates</h2>
+                        <p>
+                            We are galactic pirates who surf through the cold expanse of space, 
+                            driven by an insatiable hunger for knowledge and innovation. Our mission 
+                            is to explore uncharted territories of learning, create groundbreaking 
+                            solutions, and live with absolute freedom.
+                        </p>
+                        <p>
+                            The Treasure Box is our collection of workshops - precious gems of 
+                            knowledge that we've gathered from across the universe. Each workshop 
+                            is designed to challenge, inspire, and empower fellow space travelers 
+                            on their journey of discovery.
+                        </p>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="stat-number">2+</span>
+                                <span class="stat-label">Workshops Hosted</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Space Travelers</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Galaxies Explored</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <img src="images/logomechaversepirates.png" alt="Pirate Ship" class="pirate-ship">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Join Our Crew</h2>
+                <p>Ready to embark on an adventure through the cosmos of knowledge?</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <a href="mailto:mechaversepirates@galaxy.com" class="contact-link email-link">
+                            <span class="contact-icon email-icon">📧</span>
+                            <span>mechaversepiratessupport@gmail.com</span>
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="https://discord.gg/mechaversepirates" target="_blank" rel="noopener noreferrer" class="contact-link discord-link">
+                            <span class="contact-icon discord-icon">💬</span>
+                            <span>Discord Server</span>
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="https://instagram.com/mechaversepirates" target="_blank" rel="noopener noreferrer" class="contact-link instagram-link">
+                            <span class="contact-icon instagram-icon">📸</span>
+                            <span>@mechaversepirates</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="social-subtitle">
+                    <p>Follow our journey across the digital cosmos</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mechaverse Pirates. Sailing through space since the dawn of time.</p>
+            <p>All workshops are free to access. Knowledge belongs to the universe.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

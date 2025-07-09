@@ -1,0 +1,13 @@
+{
+  "name": "treasure-box",
+  "version": "1.0.0",
+  "description": "Treasure Box - Mechaverse Pirates Workshop Platform",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server -p 3000",
+    "start": "npx http-server -p 3000"
+  },
+  "keywords": ["workshops", "mechaverse", "pirates", "education"],
+  "author": "Mechaverse Pirates",
+  "license": "MIT"
+}
